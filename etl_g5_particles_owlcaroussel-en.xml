@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="file" method="upgrade" version="2.0">
     <name>ETL particle G5 Owl Carousel (EN)</name>
-    <version>3.0</version>
+    <version>3.1</version>
     <creationDate>28.07.2018</creationDate>
     <author>Bertrand Pascal - En Toutes Lettres</author>
     <authorEmail>webmaster@en-toutes-lettres.fr</authorEmail>
@@ -11,11 +11,11 @@
     <packager>En Toutes Lettres</packager>
     <packagerurl>https://www.en-toutes-lettres.fr</packagerurl>
     <description>
-        <![CDATA[<h3>Particle "Owl Carousel" for Gantry 5 v3.0 - Template Hydrogen (English version) - Owl Carousel v2.3.4</h3>
+        <![CDATA[<h3>Particle "Owl Carousel" for Gantry 5 v3.1 - Template Hydrogen (English version) - Owl Carousel v2.3.4</h3>
 		<h4>By RocketTheme - Copy of particle from Helium free template<br />Adaptation for Hydrogen by En Toutes Lettres (https://www.en-toutes-lettres.fr)</h4>
 		<h4>Don't forget to add these 2 lines if not done</h4>
 		<h3><span style="color:#0000FF">@import 'dependencies;'</span></h3>
-		<h3><span style="color:#0000FF">@import 'etl_owlcarousel-en'; </span></h3>
+		<h3><span style="color:#0000FF">@import 'etl_owlcarousel'; </span></h3>
 		<h4>in your custom CSS file, custom.scss (/templates/g5_hydrogen/custom/scss/custom.scss)</h4>
         <h4>or create this file and add these 2 lines with your text editor (/templates/g5_hydrogen/custom/scss/custom.scss)</h4>]]>
     </description>
