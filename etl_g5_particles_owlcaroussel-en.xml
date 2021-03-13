@@ -22,7 +22,7 @@
     <fileset>
         <files folder="particles" target="templates/g5_hydrogen/custom/particles"><filename>owlcarousel.html.twig</filename><filename>owlcarousel.yaml</filename></files>
 		<files folder="js" target="templates/g5_hydrogen/custom/js"><filename>owl.carousel.min.js</filename></files>
-		<files folder="scss" target="templates/g5_hydrogen/custom/scss"><filename>etl_owlcarousel-en.scss</filename></files>
+		<files folder="scss" target="templates/g5_hydrogen/custom/scss"><filename>etl_owlcarousel.scss</filename></files>
 		<files folder="images/owlcarousel" target="templates/g5_hydrogen/custom/images/owlcarousel"><filename>ajax-loader.gif</filename><filename>owl.video.play.png</filename></files>
      </fileset>
 </extension>
