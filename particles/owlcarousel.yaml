@@ -1,5 +1,5 @@
 name: ETL Owl Carousel
-description: Display Owl Carousel modified by En Toutes Lettres for Hydrogen.
+description: v1.3 - Display Owl Carousel (Helium gantry 5 particle adapted by En Toutes Lettres for template Hydrogen).
 type: particle
 icon: fa-sliders
 
@@ -18,7 +18,7 @@ form:
     titel:
       type: separator.note
       class: settings-param
-      content: '<div style="color: #5fa0c0"><h4>Owl Carousel particle</h4></div><div class="float-left"><img src="/templates/g5_hydrogen/custom/particles/etl_gantry_particles.png" alt="En toutes lettres - gantry particles"></div><div class="settings-param-field">&nbsp;&nbsp;&nbsp;<a href="http://www.demo-gantry5.en-toutes-lettres.fr/en/particles-en/owl-carousel-en" target="_blank">See demo&nbsp;<i class="fa fa-fw fa-external-link"></i></a></div>'
+      content: '<div style="color: #5fa0c0"><h4>Owl Carousel particle v1.3</h4></div><div class="float-left"><img src="/templates/g5_hydrogen/custom/particles/etl_gantry_particles.png" alt="En toutes lettres - gantry particles"></div><div class="settings-param-field">&nbsp;&nbsp;&nbsp;<a href="http://www.demo-gantry5.en-toutes-lettres.fr/en/particles-en/owl-carousel-en" target="_blank">See demo&nbsp;<i class="fa fa-fw fa-external-link"></i></a></div>'
 
     class:
       type: input.selectize
@@ -33,8 +33,8 @@ form:
 
     nav:
       type: select.select
-      label: Prev / Next
-      description: Enable or disable the Prev / Next navigation.
+      label: 'Prev / Next'
+      description: 'Enable or disable the Prev / Next navigation.'
       default: disable
       options:
         enable: Enable
