@@ -1,0 +1,122 @@
+name: ETL Owl Carousel
+description: v1.3 - Afficher Owl Carousel modifié par En Toutes Lettres pour le template Hydrogen.
+type: particle
+icon: fa-sliders
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Publier
+      description: Publier la particule.
+      default: true
+
+    titel:
+      type: separator.note
+      class: settings-param
+      content: '<div style="color: #5fa0c0"><h4>Particule Owl Carousel v1.3</h4></div><div class="float-left"><img src="https://www.en-toutes-lettres.fr/images/etl/etl_gantry5_particles.png" alt="En toutes lettres - gantry particles"></div><div class="settings-param-field">&nbsp;&nbsp;&nbsp;<a href="http://www.demo-gantry5.en-toutes-lettres.fr/particles-fr/owl-carousel-fr" target="_blank">Info et  démo&nbsp;<i class="fa fa-fw fa-external-link"></i></a></div>'
+
+
+    class:
+      type: input.selectize
+      label: CSS Classes
+      description: Classe CSS de la particule.
+
+    title:
+      type: input.text
+      label: Title
+      description: Customize the title text.
+      placeholder: 'Entrer le titre'
+
+    nav:
+      type: select.select
+      label: 'Prec / Suiv'
+      description: 'Activer ou désactiver la navigation Précédent / Suivant'.
+      default: disable
+      options:
+        enable: Activer
+        disable: Désactiver
+
+    dots:
+      type: select.select
+      label: Points
+      description: Activer ou désactiver la navigation par points.
+      default: enable
+      options:
+        enable: Activer
+        disable: Désactiver
+
+    autoplay:
+      type: select.select
+      label: Autoplay
+      description: Activer ou désactiver l'Autoplay.
+      default: disable
+      options:
+        enable: Activer
+        disable: Désactiver
+
+    autoplaySpeed:
+      type: input.text
+      label: Vitesse de l'Autoplay
+      description: Réglez la vitesse de l'Autoplay, en millisecondes.
+      placeholder: 5000
+
+    imageOverlay:
+      type: select.select
+      label: Image Overlay
+      description: Activer ou désactiver la superposition d'image (Overlay).
+      default: Activer
+      options:
+        enable: Activer
+        disable: Désactiver
+
+    items:
+      type: collection.list
+      array: true
+      label: Eléments Owl Carousel
+      description: Créez chaque élément Owl Carousel à afficher.
+      value: name
+      ajax: true
+
+      fields:
+        .class:
+          type: input.selectize
+          label: CSS Classes
+          description: Noms de classes CSS individuel pour l'élément.
+        .name:
+          type: input.text
+        .image:
+          type: input.imagepicker
+          label: Image
+          description: Sélectionner votre image.
+        .title:
+          type: input.text
+          label: Titre
+          description: Entrer votre titre
+        .desc:
+          type: textarea.textarea
+          label: Description
+          description: Personnaliser la description.
+          placeholder: Entrez une brève description
+        .link:
+          type: input.text
+          label: Lien
+          description: Entrez le lien de l'élément.
+        .linktext:
+          type: input.text
+          label: Texte du lien
+          description: Entrez le texte pour le lien de l'élément.
+        .buttonclass:
+          type: input.text
+          label: Classes du bouton
+          description: Entrer la classe de bouton
+          default: 'button'
+        .disable:
+          type: input.checkbox
+          label: Désactivation
+          description: Désactivez l'élément sur le frontal.
+          default: false
