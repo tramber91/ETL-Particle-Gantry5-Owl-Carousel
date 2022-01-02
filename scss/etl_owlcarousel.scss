@@ -265,7 +265,7 @@
         text-align: center;
         cursor: pointer;
         border-radius: 50%;
-        @include transition(all 0.25s);
+        transition: all 0.25s;
 
         &:hover {
             text-decoration: none;
@@ -346,7 +346,7 @@ $font-weight-light: $font-weight-regular;
             bottom: 0;
             left: 0;
             right: 0;
-            @include transform-style(preserve-3d);
+            transform-style: preserve-3d;
 
             @include breakpoint(very-large-desktop-range) {
                 width: $breakpoints-very-large-desktop-container;
@@ -373,9 +373,9 @@ $font-weight-light: $font-weight-regular;
             }
 
             .g-owlcarousel-item-content-wrapper {
-                @include display(flex);
-                @include align-items(center);
-                @include justify-content(center);
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 height: 100%;
 
                 @include breakpoint(desktop-range) {
@@ -424,9 +424,11 @@ $font-weight-light: $font-weight-regular;
 
                     .g-owlcarousel-item-desc {
                         font-size: 1.5rem;
+						//line-height: $core-line-height - 0.5;
                         line-height: $core-line-height - 0.3;
                         font-weight: $font-weight-light;
                         padding-bottom: $content-padding * 1.5;
+						//margin-top: 0;
                         margin-top: $content-margin * 0.5;
                         margin-bottom: $content-margin;
 
@@ -469,21 +471,21 @@ $font-weight-light: $font-weight-regular;
         button.owl-next {
             position: absolute;
             top: 50%;
-            @include transform(translateY(-50%));
+            transform: translateY(-50%);
             width: 42px;
             height: 42px;
             color: $white;
             border: 1px solid $white;
             border-radius: 50%;
             text-align: center;
-            @include transition(all 0.3s);
+            transition: all 0.3s;
 
             .fa {
                 position: relative;
             }
 
             &:hover {
-                background: fadeout($white, 80%);
+                background: fade-out($white, 0.8);
                 border-color: transparent;
             }
         }
@@ -542,7 +544,7 @@ $font-weight-light: $font-weight-regular;
             height: 15px;
             border-radius: 15px;
             opacity: 0.75;
-            @include transition(all 0.2s);
+            transition: all 0.2s;
 
             &.active,
             &:hover {
@@ -557,7 +559,7 @@ $font-weight-light: $font-weight-regular;
         .owl-stage > .owl-item:nth-child(even) {
             .g-owlcarousel-item-img:after {
                 background-color: $accent-color-1;
-                @include linear-gradient(40deg, $accent-color-1, $accent-color-2);
+                background: linear-gradient(40deg, $accent-color-1, $accent-color-2);
                 opacity: 0.85;
             }
         }
@@ -565,7 +567,7 @@ $font-weight-light: $font-weight-regular;
         .owl-stage > .owl-item:nth-child(odd) {
             .g-owlcarousel-item-img:after {
                 background-color: $accent-color-2;
-                @include linear-gradient(140deg, $accent-color-2, $accent-color-1);
+                background: linear-gradient(140deg, $accent-color-2, $accent-color-1);
                 opacity: 0.85;
             }
         }
